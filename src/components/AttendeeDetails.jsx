@@ -74,7 +74,7 @@ const AttendeeDetails = () => {
     if (!hasError) {
       const attendeeData = { name, email, message, imageUrl };
       localStorage.setItem("attendeeDetails", JSON.stringify(attendeeData));
-      console.log("Form submitted:", attendeeData);
+      // console.log("Form submitted:", attendeeData);
       navigate("/printOut");
     }
   };
