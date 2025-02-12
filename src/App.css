@@ -3,11 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 @import "tailwindcss";
-/* @import url('https://db.onlinewebfonts.com/c/1a5c2d8bbd4e28d99a6efcbb9a5b378f?family=JejuMyeongjo'); */
 
 body{
   background: radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), #02191D;
   font-family: "Roboto", serif;
+}
+@media (max-width: 640px) { /* Adjust for small screens */
+  body {
+    padding: 1rem; /* Adjust padding as needed */
+  }
 }
 
 .JejuMyeongjo{
@@ -27,20 +31,25 @@ body{
 }
 
 .gradientBg{
-  background: radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), #07373F;
+  background: radial-gradient(
+      103.64% 57.39% at 14.02% 32.06%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    rgba(10, 12, 17, 0.1);
 }
 
 .loading-bar {
   width: 100%;
-  height: 3px; /* Adjust height as needed */
-  background-color: #0E464F; /* Background color of the bar */
-  border-radius: 5px; /* Optional: for rounded corners */
+  height: 3px;
+  background-color: #0E464F;
+  border-radius: 5px;
 }
 
 .filled-bar {
   height: 100%;
-  background-color: #24A0B5; /* Color of the filled portion */
-  border-radius: 5px; /* Optional: for rounded corners */
+  background-color: #24A0B5;
+  border-radius: 5px;
 }
 
 .box {
@@ -48,39 +57,3 @@ body{
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
-
-/* .box {
-  position: relative;
-  --mask:
-    radial-gradient(25px at 25px 25px,#0000 calc(98% - 2px),#000 calc(100% - 2px) 98%,#0000) -25px -25px,
-    linear-gradient(90deg,#000 4px,#0000 0) -2px 50% /100% calc(100% - 50px + 2px) repeat-x,
-    linear-gradient(      #000 4px,#0000 0) 50% -2px/calc(100% - 50px + 2px) 100% repeat-y;
-}
-.box:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #197686;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-} */
-
-/* .qr-box { */
-  /* position: relative; */
-  /* --mask: */
-    /* Dashed line at the top */
-    /* linear-gradient(90deg, #000 40%, #0000 0) 0 0 / 20px 5px repeat-x, */
-    /* Existing mask pattern */
-    /* radial-gradient(25px at 25px 25px, #0000 calc(98% - 2px), #000 calc(100% - 2px) 98%, #0000) -25px -25px,
-    linear-gradient(90deg, #000 4px, #0000 0) -2px 50% / 100% calc(100% - 50px + 2px) repeat-x,
-    linear-gradient(#000 4px, #0000 0) 50% -2px / calc(100% - 50px + 2px) 100% repeat-y; */
-/* } */
-
-/* .qr-box:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #197686;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-} */
