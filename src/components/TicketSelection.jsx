@@ -16,7 +16,6 @@ const TicketSelection = () => {
   const [quantityError, setQuantityError] = useState("");
   const navigate = useNavigate();
 
-  // Load stored data on mount
   useEffect(() => {
     const savedTicket = JSON.parse(localStorage.getItem("ticketSelection"));
     if (savedTicket) {
@@ -25,7 +24,6 @@ const TicketSelection = () => {
     }
   }, []);
 
-  // Save to local storage when selection changes
   useEffect(() => {
     if (selectedTicket) {
       localStorage.setItem(
@@ -35,7 +33,6 @@ const TicketSelection = () => {
     }
   }, [selectedTicket, quantity]);
 
-  // Options for the quantity dropdown
   const quantityOptions = Array.from({ length: 20 }, (_, i) => ({
     value: i + 1,
     label: `${i + 1}`,
@@ -45,29 +42,29 @@ const TicketSelection = () => {
   const customStyles = {
     control: (provided, state) => ({
       ...provided,
-      backgroundColor: "#08252B", // Background color of the input
-      borderColor: "#07373F", // Border color
-      color: "white", // Text color
+      backgroundColor: "#08252B",
+      borderColor: "#07373F",
+      color: "white",
       "&:hover": {
-        borderColor: "#07373F", // Border color on hover
+        borderColor: "#07373F",
       },
     }),
     option: (provided, state) => ({
       ...provided,
-      backgroundColor: state.isFocused ? "#07373F" : "#08252B", // Background color of options
-      color: "white", // Text color of options
+      backgroundColor: state.isFocused ? "#07373F" : "#08252B",
+      color: "white",
     }),
     menu: (provided) => ({
       ...provided,
-      backgroundColor: "#08252B", // Background color of the dropdown menu
+      backgroundColor: "#08252B",
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: "white", // Text color of the selected value
+      color: "white",
     }),
     input: (provided) => ({
       ...provided,
-      color: "white", // Text color of the input
+      color: "white",
     }),
   };
 
@@ -139,6 +136,7 @@ const TicketSelection = () => {
           {quantityError && <p className="text-red-500 mt-2">{quantityError}</p>}
         </div>
 
+        {/* Buttons */}
         <div className="JejuMyeongjo text-sm flex flex-col-reverse sm:flex-row justify-between gap-2 sm:gap-0">
           <button
             className="cursor-pointer w-full sm:w-[48%] bg-transparent border-[1px] border-[#24A0B5] text-[#24A0B5] hover:text-white py-3 rounded-lg hover:bg-[#197686]"

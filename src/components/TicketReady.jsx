@@ -110,15 +110,14 @@ const TicketReady = () => {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="w-[85%] md:w-[74%] h-[3px] border-1 border-dashed border-[#197686] rounded-lg mx-auto my-0"></div>
 
-      {/* Barcode Section */}
+      {/* Barcode */}
       <div className="box p-4 sm:p-6 max-w-lg mx-auto bg-[#072C31] flex justify-center rounded-xl">
         <img src={barCode} alt="Barcode" className="w-[90%]" />
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Buttons */}
       <div className="JejuMyeongjo text-sm flex flex-col-reverse sm:flex-row gap-4 mt-6 sm:mt-10">
         <button
           className="cursor-pointer w-full sm:w-[48%] bg-transparent border-[1px] border-[#24A0B5] hover:text-white py-3 rounded-lg hover:bg-[#197686] text-[#24A0B5]"

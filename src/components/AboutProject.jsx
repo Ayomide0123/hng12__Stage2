@@ -26,8 +26,8 @@ const AboutProject = () => {
             <ul className="list-disc list-inside text-gray-300 leading-relaxed">
               <li>Users can browse available tickets (Free & Paid).</li>
               <li>Ticket options are displayed in a list or card view.</li>
-              <li>For Free Tickets → Clicking "Get Free Ticket" proceeds to attendee details.</li>
-              <li>For Paid Tickets → Clicking "Purchase Ticket" would ideally open a payment modal.</li>
+              <li>For Free Tickets → Clicking &apos;&apos;Get Free Ticket&apos;&apos; proceeds to attendee details.</li>
+              <li>For Paid Tickets → Clicking &apos;&apos;Purchase Ticket&apos;&apos; would ideally open a payment modal.</li>
             </ul>
           </div>
           <div>
@@ -67,7 +67,6 @@ const AboutProject = () => {
         </ul>
       </section>
 
-      {/* Call to Action */}
       <p className="text-4xl sm:text-6xl text-center my-10 font-light">💛 Enjoy</p>
 
       {/* Buttons */}

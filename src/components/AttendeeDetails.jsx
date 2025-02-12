@@ -28,7 +28,7 @@ const AttendeeDetails = () => {
       const file = acceptedFiles[0];
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "hng12stage2"); // Replace with your Cloudinary preset
+      formData.append("upload_preset", "hng12stage2");
 
       setIsLoading(true);
 
