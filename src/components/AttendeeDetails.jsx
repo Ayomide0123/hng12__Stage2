@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Mail, CloudDownload } from "lucide-react";
 
+
+const apiUrl = import.meta.env.VITE_API_URL;
+
+
 const AttendeeDetails = () => {
   const getSavedValue = (key) => {
     const savedData = localStorage.getItem("attendeeDetails")
@@ -11,6 +15,7 @@ const AttendeeDetails = () => {
       : {};
     return savedData[key] || "";
   };
+
 
   const [name, setName] = useState(() => getSavedValue("name"));
   const [email, setEmail] = useState(() => getSavedValue("email"));
@@ -34,7 +39,7 @@ const AttendeeDetails = () => {
 
       try {
         const response = await axios.post(
-          "https://api.cloudinary.com/v1_1/dy7swikgw/image/upload",
+          `${apiUrl}`,
           formData
         );
         setImageUrl(response.data.secure_url);
