@@ -44,7 +44,7 @@ const TicketReady = () => {
       </div>
 
       {/* Ticket Box */}
-      <div className="box p-4 sm:p-6 max-w-lg mx-auto bg-[#072C31] rounded-xl">
+      <div className="box p-4 sm:p-6 max-w-lg mx-auto rounded-xl ticketBg">
         <div className="border-2 border-[#24A0B5] rounded-2xl p-4 sm:p-6">
           <div className="text-center flex flex-col gap-2">
             <p className="road-rage-regular text-3xl sm:text-5xl">
@@ -113,7 +113,7 @@ const TicketReady = () => {
       <div className="w-[85%] md:w-[74%] h-[3px] border-1 border-dashed border-[#197686] rounded-lg mx-auto my-0"></div>
 
       {/* Barcode */}
-      <div className="box p-4 sm:p-6 max-w-lg mx-auto bg-[#072C31] flex justify-center rounded-xl">
+      <div className="box p-4 sm:p-6 max-w-lg mx-auto ticketBg flex justify-center rounded-xl">
         <img src={barCode} alt="Barcode" className="w-[90%]" />
       </div>
 

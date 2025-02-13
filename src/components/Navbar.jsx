@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <nav className="JejuMyeongjo p-3 flex justify-between items-center w-[90vw] border border-[#197686] rounded-2xl mx-auto my-4 bg-[#05252C]/40">
+    <nav className="JejuMyeongjo p-3 flex justify-between items-center w-[90vw] rounded-2xl mx-auto my-4 navBarBg">
       {/* Logo */}
       <img src={ticzLogo} alt="ticzLogo" />
 
@@ -17,7 +17,7 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               `transition-colors duration-200 hover:text-white ${
-                isActive ? "text-white font-semibold" : ""
+                isActive ? "text-white" : ""
               }`
             }
           >
@@ -29,7 +29,7 @@ const Navbar = () => {
             to="/printOut"
             className={({ isActive }) =>
               `transition-colors duration-200 hover:text-white ${
-                isActive ? "text-white font-semibold" : ""
+                isActive ? "text-white" : ""
               }`
             }
           >
@@ -41,7 +41,7 @@ const Navbar = () => {
             to="/about-project"
             className={({ isActive }) =>
               `transition-colors duration-200 hover:text-white ${
-                isActive ? "text-white font-semibold" : ""
+                isActive ? "text-white" : ""
               }`
             }
           >
